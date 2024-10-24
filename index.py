@@ -24,8 +24,9 @@ class TalkBot:
 
     def textToSpeech(self, answer):
         myobj = gTTS(text=answer, lang=self.LANGUAGE_EN, slow=False) 
-        myobj.save("temp_audio.mp3") 
-        os.system("mpg321 temp_audio.mp3") 
+        audio_file = "temp_audio.mp3"
+        myobj.save(audio_file) 
+        os.system(f"mpg321 {audio_file}")  # Use f-string for clarity
 
     def getAnswer(self):
         try:
@@ -36,8 +37,8 @@ class TalkBot:
             question_answerer = pipeline("question-answering", model='distilbert-base-cased-distilled-squad', device=0)
             result = question_answerer(question=self.question, context=context)
             answer = result['answer']
-            print(answer)
-            self.textToSpeech(answer)  # Convert answer to speech if desired
+            print("Answer:", answer)  # Print the answer in the console
+            self.textToSpeech(answer)  # Convert answer to speech
         except Exception as e:
             print(e)
 
