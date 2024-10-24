@@ -50,26 +50,27 @@ This project is licensed under the MIT License.
 
 (base) PrabakaranP@ bertq-amodel-main % python index.py
 Devotee, Please tell us your problem: 
+
 Loading ...
-dear one
+Sai baba: dear one
 
 (base) PrabakaranP@ bertq-amodel-main % python index.py
 Devotee, Please tell us your problem: 
 Loading ...
-love and determination
+Sai baba: love and determination
 
 (base) PrabakaranP@ bertq-amodel-main % python index.py
 Devotee, Please tell us your problem: 
 Loading ...
-My dear one, in the midst of property disputes
+Sai baba: My dear one, in the midst of property disputes
 
 (base) PrabakaranP@ bertq-amodel-main % python index.py
 Devotee, Please tell us your problem: 
 Loading ...
-My child
+Sai baba: My child
 
 (base) PrabakaranP@ bertq-amodel-main % python index.py
 Devotee, Please tell us your problem: 
 Loading ...
-My dear devotee, your health is a precious gift from the Divine
-(base) PrabakaranP@ bertq-amodel-main % 
+Sai baba: My dear devotee, your health is a precious gift from the Divine
+
