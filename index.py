@@ -40,7 +40,7 @@ class TalkBot:
             question = data["question"][random_num]
             text = data["text"][random_num]
         
-            question_answerer = pipeline("question-answering", model='distilbert-base-cased-distilled-squad')
+            question_answerer = pipeline("question-answering", model='distilbert-base-cased-distilled-squad', device=0) # Use 0 for GPU
 
             context = data["answer"][random_num]
             result = question_answerer(question=self.question,     context=context)
